@@ -1,3 +1,10 @@
+//
+//  ZZDeviceManager.swift
+//  WStar
+//
+//
+
+
 import UIKit
 
 class ZZDeviceManager {
