@@ -2,7 +2,6 @@
 //  WSSettingsView.swift
 //  WStar
 //
-//  Created by Dias Atudinov on 25.09.2025.
 //
 
 import SwiftUI

@@ -15,7 +15,7 @@ struct WSMenuView: View {
     @State private var showCalendar = false
     @State private var showDailyReward = false
     
-    //    @StateObject var shopVM = CPShopViewModel()
+    @StateObject var shopVM = CPShopViewModel()
     
     var body: some View {
         
@@ -104,16 +104,16 @@ struct WSMenuView: View {
                 //                HKHLevelsVIew()
             }
             .fullScreenCover(isPresented: $showAchievement) {
-                //                HKHAchievementsView()
+                WSAchievementsView()
             }
             .fullScreenCover(isPresented: $showShop) {
-                //                HKHShopView(viewModel: shopVM)
+                WSShopView(viewModel: shopVM)
             }
             .fullScreenCover(isPresented: $showSettings) {
                 WSSettingsView()
             }
             .fullScreenCover(isPresented: $showDailyReward) {
-                //                HKHDailyView()
+                WSDailyView()
             }
     }
 }
