@@ -1,3 +1,10 @@
+//
+//  DailyRewardsViewModel.swift
+//  WStar
+//
+//
+
+
 import SwiftUI
 import Combine
 
