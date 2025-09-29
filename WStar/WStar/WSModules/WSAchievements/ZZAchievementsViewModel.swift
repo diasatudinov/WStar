@@ -1,13 +1,20 @@
+//
+//  ZZAchievementsViewModel.swift
+//  WStar
+//
+//
+
+
 import SwiftUI
 
 class ZZAchievementsViewModel: ObservableObject {
     
     @Published var achievements: [NEGAchievement] = [
-        NEGAchievement(image: "achieve1ImageHKH", title: "achieve1TextHKH", isAchieved: false),
-        NEGAchievement(image: "achieve2ImageHKH", title: "achieve2TextHKH", isAchieved: false),
-        NEGAchievement(image: "achieve3ImageHKH", title: "achieve3TextHKH", isAchieved: false),
-        NEGAchievement(image: "achieve4ImageHKH", title: "achieve4TextHKH", isAchieved: false),
-        NEGAchievement(image: "achieve5ImageHKH", title: "achieve5TextHKH", isAchieved: false),
+        NEGAchievement(image: "achieve1ImageWS", title: "achieve1TextWS", isAchieved: false),
+        NEGAchievement(image: "achieve2ImageWS", title: "achieve2TextWS", isAchieved: false),
+        NEGAchievement(image: "achieve3ImageWS", title: "achieve3TextWS", isAchieved: false),
+        NEGAchievement(image: "achieve4ImageWS", title: "achieve4TextWS", isAchieved: false),
+        NEGAchievement(image: "achieve5ImageWS", title: "achieve5TextWS", isAchieved: false),
     ] {
         didSet {
             saveAchievementsItem()
@@ -16,10 +23,9 @@ class ZZAchievementsViewModel: ObservableObject {
         
     init() {
         loadAchievementsItem()
-        
     }
     
-    private let userDefaultsAchievementsKey = "achievementsKeyHKH"
+    private let userDefaultsAchievementsKey = "achievementsKeyWS"
     
     func achieveToggle(_ achive: NEGAchievement) {
         guard let index = achievements.firstIndex(where: { $0.id == achive.id })
