@@ -101,7 +101,7 @@ struct WSMenuView: View {
                 
             )
             .fullScreenCover(isPresented: $showGame) {
-                //                HKHLevelsVIew()
+                OpponentFindView()
             }
             .fullScreenCover(isPresented: $showAchievement) {
                 WSAchievementsView()

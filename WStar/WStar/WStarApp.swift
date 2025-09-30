@@ -8,9 +8,12 @@ import SwiftUI
 
 @main
 struct WStarApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CPRoot()
+                .preferredColorScheme(.light)
         }
     }
 }
